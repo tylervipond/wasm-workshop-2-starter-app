@@ -10,6 +10,9 @@
 
 # production
 /build
+/public/**/*.wasm
+/public/**/*.wasm.map
+/public/**/*.wat
 
 # misc
 .DS_Store
