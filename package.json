@@ -17,7 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "asbuild": "asc ./node_modules/as-bind/lib/assembly/as-bind.ts assembly/index.ts -b public/main.wasm -t public/main.wat --sourceMap --optimize"
+    "asbuild:prod": "asc ./node_modules/as-bind/lib/assembly/as-bind.ts assembly/index.ts -b public/main.wasm --optimize",
+    "asbuild:dev": "asc ./node_modules/as-bind/lib/assembly/as-bind.ts assembly/index.ts -b public/main-debug.wasm -t public/main-debug.wat --sourceMap --debug"
   },
   "eslintConfig": {
     "extends": "react-app"
