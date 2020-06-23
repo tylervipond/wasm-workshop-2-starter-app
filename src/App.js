@@ -8,7 +8,7 @@ function App() {
   const { loaded, error, instance } = useAsBind(WASM_FILENAME);
   return (
     <div className="App">
-      {loaded && instance.exports.add(1, 2)}
+      {loaded && instance.exports.add(1, 4)}
       {error && JSON.stringify(error)}
     </div>
   );
